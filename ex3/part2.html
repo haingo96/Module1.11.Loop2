@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let degree
+    do {
+        degree = parseFloat(prompt("Input degree!"))
+        if (degree > 100) {
+            alert('Decrease degree!')
+        }
+        if (degree < 20) {
+            alert('Increase degree!')
+        }
+    } while (degree > 100 || degree < 20)
+</script>
+</body>
+</html>
