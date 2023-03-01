@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let secondNumberBefore = 0
+    let onceNumberBefore = 1
+    let fi = 0
+    document.write(0 + '<br>')
+    document.write(1 + '<br>')
+    while (fi < 10000) {
+        fi = onceNumberBefore + secondNumberBefore
+        document.write(fi + '<br>')
+        secondNumberBefore = onceNumberBefore
+        onceNumberBefore= fi
+    }
+</script>
+</body>
+</html>
