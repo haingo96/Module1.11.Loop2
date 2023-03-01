@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<button type="button">Bắt đầu</button>
+<script>
+    let btn = document.querySelector('button')
+    btn.addEventListener('click', startGame)
+
+    function startGame() {
+        let max = parseInt(prompt('Số bạn muốn đoán trong khoảng lớn nhất là bao nhiêu?'))
+        let ctn = 1
+        let targetNumber = parseInt(max * Math.random())
+        let input
+        let result = false
+        do {
+            input = prompt('Nhập số bạn đoán')
+            if (input > targetNumber) {
+                alert('Số bạn đoán lớn hơn')
+            } else if (input < targetNumber) {
+                alert('Số bạn đoán bé hơn')
+            } else {
+                alert('Số bạn đoán chính xác')
+                result = true
+                break
+            }
+            ctn++
+        } while (ctn < 4)
+        if (result === false) {
+            alert('Bạn hết số lần đoán')
+        }
+    }
+</script>
 </body>
 </html>
