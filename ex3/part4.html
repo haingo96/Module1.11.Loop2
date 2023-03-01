@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let secondNumberBefore = 0
+    let onceNumberBefore = 1
+    let fi
+    while (true) {
+        fi = onceNumberBefore + secondNumberBefore
+        if (fi % 5 === 0){
+            document.write(fi + '')
+            break
+        }
+        secondNumberBefore = onceNumberBefore
+        onceNumberBefore = fi
+    }
+</script>
+</body>
+</html>
