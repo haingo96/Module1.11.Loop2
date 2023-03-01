@@ -6,7 +6,9 @@
 </head>
 <body>
 <script>
-    for (let i = 1; i <= 5; i++) {
+    let width = parseInt(prompt('Input a number bigger than 5'))
+
+    for (let i = 1; i <= width; i++) {
         for (let j = 1; j <= i; j++) {
             document.write('*')
         }
@@ -16,7 +18,7 @@
     document.write('<br>')
     document.write('<br>')
 
-    for (let i = 5; i >= 1; i--) {
+    for (let i = width; i >= 1; i--) {
         for (let j = i; j >= 1; j--) {
             document.write('*')
         }
@@ -26,7 +28,6 @@
     document.write('<br>')
     document.write('<br>')
 
-    let width = 5
     let star = 1
     let space = '<span style="color: white">' + '*' + '</span>'
     let numberSpace
