@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numberOfNumber = parseInt(prompt('Input number of Prime Number!'))
+    let isPrime
+    let ctn = 0
+    let prime = 2
+
+    while (ctn < numberOfNumber) {
+        if (checkPrime(prime) === true) {
+            document.write(prime + '<br>')
+            ctn++
+        }
+        prime++
+    }
+
+    function checkPrime(numberToCheck) {
+        isPrime = true
+        for (let i = 2; i < numberToCheck; i++) {
+            if (numberToCheck % i === 0) {
+                isPrime = false
+                break
+            }
+        }
+        return isPrime
+    }
+</script>
+</body>
+</html>
