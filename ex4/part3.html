@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= i; j++) {
+            document.write('*')
+        }
+        document.write('<br>')
+    }
+
+    document.write('<br>')
+    document.write('<br>')
+
+    for (let i = 5; i >= 1; i--) {
+        for (let j = i; j >= 1; j--) {
+            document.write('*')
+        }
+        document.write('<br>')
+    }
+
+    document.write('<br>')
+    document.write('<br>')
+
+    let width = 5
+    let star = 1
+    let space = '<span style="color: white">' + '*' + '</span>'
+    let numberSpace
+    let cnt = 0
+    while (cnt < width){
+        numberSpace = width - star
+        while (numberSpace > 0){
+            document.write(space)
+            numberSpace--
+        }
+        for (let i = 1; i <= star ; i++) {
+            document.write('*')
+        }
+        document.write('<br>')
+        star++
+        cnt++
+    }
+
+    document.write('<br>')
+    document.write('<br>')
+
+    let secondStar = width
+    let secondNumberSpace
+    let secondCnt = 0
+    while (secondCnt < width){
+        secondNumberSpace = width - secondStar
+        for (let i = 1; i <= secondNumberSpace ; i++) {
+            document.write(space)
+        }
+        for (let i = 1; i <= secondStar ; i++) {
+            document.write('*')
+        }
+        document.write('<br>')
+        secondStar--
+        secondCnt++
+    }
+
+</script>
+</body>
+</html>
