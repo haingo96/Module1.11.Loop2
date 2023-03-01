@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let secondNumberBefore = 0
+    let onceNumberBefore = 1
+    let ctn = 3
+    let fi
+    let sum = 1
+    while (ctn < 21) {
+        fi = onceNumberBefore + secondNumberBefore
+        sum += fi
+        secondNumberBefore = onceNumberBefore
+        onceNumberBefore = fi
+        ctn++
+    }
+    alert(sum)
+</script>
+</body>
+</body>
+</html>
