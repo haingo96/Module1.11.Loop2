@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let secondNumberBefore = 0
+    let onceNumberBefore = 1
+    let ctn = 3
+    let fi
+    document.write(0 + '<br>' + 1 + '<br>')
+    while(ctn < 21){
+        fi = onceNumberBefore + secondNumberBefore
+        document.write(fi + '<br>')
+        secondNumberBefore = onceNumberBefore
+        onceNumberBefore = fi
+        ctn++
+    }
+</script>
+</body>
+</html>
