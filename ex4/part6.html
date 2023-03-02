@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let width = parseInt(prompt('Input width!'))
+    let space = "<span style='color: white'>*</span>"
+    let quarterWidth = width / 4
+    let upperStar = parseInt(width / 10)
+
+    while (quarterWidth > upperStar) {
+        for (let j = 0; j < quarterWidth - upperStar; j++) {
+            document.write(space)
+        }
+        for (let i = 1; i <= upperStar; i++) {
+            document.write('*')
+            document.write('*')
+        }
+        for (let j = 0; j < quarterWidth - upperStar; j++) {
+            document.write(space)
+            document.write(space)
+        }
+        for (let i = 1; i <= upperStar; i++) {
+            document.write('*')
+            document.write('*')
+        }
+        for (let j = 0; j < quarterWidth - upperStar; j++) {
+            document.write(space)
+        }
+        document.write('<br>')
+        upperStar+=2
+    }
+
+    let lowerSpaceNumber = 1
+    while (width > 2 * lowerSpaceNumber) {
+        for (let i = 1; i <= lowerSpaceNumber ; i++) {
+            document.write(space)
+        }
+        for (let i = 1; i < width - (lowerSpaceNumber * 2); i++) {
+            document.write('*')
+        }
+        for (let i = 1; i <= lowerSpaceNumber ; i++) {
+            document.write(space)
+        }
+        document.write('<br>')
+        lowerSpaceNumber += 2
+    }
+</script>
+</body>
+</html>
