@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let amount = 5000
+  let init = 5000
+  let interest = 1.5 / 100
+  let month = 12
+  for (let i = 2; i < month; i++) {
+    amount = amount * (interest + 1)
+  }
+  document.write(amount - init)
+</script>
+</body>
+</html>
